@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="/3-css/gameStyle.css">
+</head>
+
+<body onload="generateFaces()">
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left.</p>
+    <div id="leftSide"></div>
+    <div id="rightSide"></div>
+
+    <script src="/2-js/matching-game.js">
+        window.addEventListener('load', function(){
+            generateFaces();
+            event.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>
